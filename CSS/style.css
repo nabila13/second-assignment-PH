@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap');
+
 /* media query for pc or desktop starts from here*/
 
 body {
     margin: 0;
     width: 100%;
     background-color: azure;
+    font-family: 'Bree Serif', 'sans-serif';
 }
 
 .top-part {
@@ -85,7 +88,7 @@ main {
 }
 
 
-/* middle part code / the code of the top part of main starts here */
+/* middle part code of main tag starts here */
 
 .middle-part {
     width: 1000px;
@@ -106,7 +109,7 @@ main {
     width: 310px;
     background-color: white;
     padding: 15px;
-    height: 410px;
+    height: 450px;
     flex-direction: column;
     border: 1px solid gray;
     justify-content: center;
@@ -117,7 +120,7 @@ main {
 .player img {
     width: 300px;
     height: 210px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 15px;
     border: 1px solid black;
 }
@@ -127,11 +130,11 @@ main {
     display: flex;
     justify-content: flex-start;
     text-align: justify;
-    margin-top: -2px;
+    margin-top: 2px;
 }
 
 .player .description p {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 
@@ -284,16 +287,16 @@ footer style starts here */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 50px 0 80px;
+        margin: 0 50px 0 50px;
     }
     #login-button {
         background-color: crimson;
-        font-size: 12px;
+        font-size: 10px;
         position: relative;
         color: bisque;
-        width: 85px;
+        width: 95px;
         padding: 6px;
-        left: 800px;
+        left: 700px;
         margin-top: 30px;
     }
     .top-banner {
@@ -345,7 +348,7 @@ footer style starts here */
         width: 300px;
         background-color: white;
         padding: 20px;
-        height: 410px;
+        height: 420px;
         flex-direction: column;
         border: 1px solid gray;
         justify-content: center;
@@ -355,7 +358,7 @@ footer style starts here */
     .player img {
         width: 300px;
         height: 200px;
-        margin-top: 15px;
+        margin-top: 40px;
         margin-left: -10px;
         margin-right: -10px;
         margin-bottom: 15px;
@@ -408,7 +411,7 @@ footer style starts here */
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 120px 0 0 350px;
+        margin: 120px 0 0 300px;
     }
 }
 
@@ -430,7 +433,7 @@ footer style starts here */
         background-color: cadetblue;
         display: flex;
         position: relative;
-        left: 350px;
+        left: 280px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -441,7 +444,7 @@ footer style starts here */
         font-size: 12px;
         position: relative;
         color: bisque;
-        width: 85px;
+        width: 95px;
         padding: 6px;
         left: 120px;
         margin-top: 5px;
@@ -453,6 +456,8 @@ footer style starts here */
         flex-direction: column;
         justify-content: center;
         margin-bottom: 61px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .left {
         width: 280px;
@@ -460,13 +465,14 @@ footer style starts here */
         height: 140px;
         margin-bottom: 150px;
         position: relative;
-        right: 120px;
+        right: 170px;
     }
     .right {
         width: 350px;
         position: relative;
-        right: 30px;
+        right: 60px;
         height: 260px;
+        margin-top: 100px;
     }
     .right img {
         margin-top: 30px;
@@ -482,4 +488,39 @@ footer style starts here */
         transform: translateX(80px);
     }
     /* header styling ends */
+    /* main tag styling starts */
+    .middle-part {
+        width: 400px;
+        background-color: inherit;
+        margin: 70px -100px auto 310px;
+    }
+    .players {
+        width: 370px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 35px;
+        grid-column-gap: 5px;
+        padding: 20px;
+    }
+    .player {
+        display: flex;
+        width: 330px;
+        background-color: white;
+        padding: 20px;
+        height: 450px;
+        flex-direction: column;
+        border: 1px solid gray;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 5px 5px darkolivegreen;
+    }
+    .player img {
+        width: 310px;
+        height: 200px;
+        margin-top: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 15px;
+        border: 1px solid black;
+    }
 }
