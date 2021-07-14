@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    width: 100%;
+    width: 1360px;
     background-color: azure;
     font-family: 'Bree Serif', 'sans-serif';
 }
@@ -280,7 +280,7 @@ footer style starts here */
 
 @media only screen and (min-width: 641px) and (max-width:1000px) {
     body {
-        width: 100%;
+        width: 1000px;
         margin: 0;
     }
     /*  header part */
@@ -425,7 +425,7 @@ footer style starts here */
 
 @media only screen and (max-width:640px) {
     body {
-        width: 100%;
+        width: 640px;
         margin: 0 auto;
     }
     /* header styling */
