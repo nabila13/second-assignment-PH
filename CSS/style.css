@@ -1,3 +1,5 @@
+/* media query for pc or desktop starts from here*/
+
 body {
     margin: 0;
     width: 100%;
@@ -87,11 +89,8 @@ main {
 
 .middle-part {
     width: 1000px;
-    /* margin-bottom: 120px; */
     background-color: inherit;
-    /* margin-top: 70px; */
     margin: 70px 180px 120px 20px;
-    /* margin-right: 200px; */
 }
 
 .players {
@@ -104,7 +103,7 @@ main {
 
 .player {
     display: flex;
-    width: 320px;
+    width: 310px;
     background-color: white;
     padding: 15px;
     height: 410px;
@@ -152,7 +151,7 @@ main {
     padding: 20px;
     margin-left: 50px;
     flex-direction: row;
-    background-color: white;
+    background-color: inherit;
 }
 
 .left-container {
@@ -160,6 +159,7 @@ main {
     border: 2px solid teal;
     box-shadow: 0 0 5px 5px teal;
     margin-right: 50px;
+    background-color: white;
 }
 
 .left-container h1 {
@@ -213,6 +213,7 @@ main {
     box-shadow: 0 0 5px 5px teal;
     width: 560px;
     padding: 0 20px 20px 20px;
+    background-color: white;
 }
 
 .right-container h1 {
@@ -264,3 +265,221 @@ footer style starts here */
 
 
 /* footer style ends here */
+
+
+/* media query for pc or desktop ends here*/
+
+
+/* media query for tablet starts from here */
+
+@media only screen and (min-width: 641px) and (max-width:1000px) {
+    body {
+        width: 90%;
+        margin: 0;
+    }
+    /*  header part */
+    .top-part {
+        width: 950px;
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 50px 0 80px;
+    }
+    #login-button {
+        background-color: crimson;
+        font-size: 12px;
+        position: relative;
+        color: bisque;
+        width: 85px;
+        padding: 6px;
+        left: 800px;
+        margin-top: 30px;
+    }
+    .top-banner {
+        display: flex;
+        margin: 60px auto 30px auto;
+        justify-content: space-between;
+    }
+    .left {
+        width: 400px;
+        margin-left: 50px;
+        transition: transform 1s linear .5s;
+        margin-right: 80px;
+    }
+    .right {
+        width: 400px;
+        margin-right: 50px;
+    }
+    .right img {
+        width: 400px;
+        position: relative;
+        top: -30px;
+        transition: transform 1s linear .5s;
+    }
+    .top-part:hover .right img {
+        transform: translateX(-80px);
+    }
+    .top-part:hover .left {
+        transform: translateX(100px);
+    }
+    /* header styling ends here */
+    /*  main tag styling starts from here */
+    /************ players' leader board styling starts from here
+    ***************** */
+    .middle-part {
+        width: 780px;
+        background-color: inherit;
+        margin: 70px -50px auto 150px;
+    }
+    .players {
+        width: 750px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 35px;
+        grid-column-gap: 5px;
+        padding: 30px;
+    }
+    .player {
+        display: flex;
+        width: 300px;
+        background-color: white;
+        padding: 20px;
+        height: 410px;
+        flex-direction: column;
+        border: 1px solid gray;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 5px 5px darkolivegreen;
+    }
+    .player img {
+        width: 300px;
+        height: 200px;
+        margin-top: 15px;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: 15px;
+        border: 1px solid black;
+    }
+    /* players' leader board of main tag ends here */
+    /*
+    bottom style of the main tag starts from here */
+    .bottom-part {
+        margin: 120px auto 120px auto;
+        width: 1000px;
+    }
+    .bottom {
+        justify-content: space-evenly;
+        display: flex;
+        padding: 20px;
+        margin-left: 50px;
+        flex-direction: row;
+        background-color: inherit;
+    }
+    .left-container {
+        width: 400px;
+        border: 2px solid teal;
+        box-shadow: 0 0 5px 5px teal;
+        margin-right: 50px;
+        background-color: white;
+    }
+    .left-container h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .score h2,
+    .score .rank {
+        font-size: 20px;
+    }
+    .right-container {
+        border: 2px solid teal;
+        box-shadow: 0 0 5px 5px teal;
+        width: 520px;
+        padding: 0 20px 20px 20px;
+        background-color: white;
+    }
+    .right-container h1 {
+        font-size: 25px;
+    }
+    /*  footer style starts from here */
+    .footer-part {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 120px 0 0 350px;
+    }
+}
+
+
+/* media query for tablet device ends here */
+
+
+/* media query for android mobile starts from here */
+
+@media only screen and (max-width:640px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+    /* header styling */
+    .top-part {
+        max-width: 500px;
+        width: 380px;
+        background-color: cadetblue;
+        display: flex;
+        position: relative;
+        left: 350px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    #login-button {
+        background-color: crimson;
+        font-size: 12px;
+        position: relative;
+        color: bisque;
+        width: 85px;
+        padding: 6px;
+        left: 120px;
+        margin-top: 5px;
+    }
+    .top-banner {
+        display: flex;
+        margin-top: 5px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 61px;
+    }
+    .left {
+        width: 280px;
+        transition: transform 1s linear .5s;
+        height: 140px;
+        margin-bottom: 150px;
+        position: relative;
+        right: 120px;
+    }
+    .right {
+        width: 350px;
+        position: relative;
+        right: 30px;
+        height: 260px;
+    }
+    .right img {
+        margin-top: 30px;
+        width: 340px;
+        position: relative;
+        left: 100px;
+        transition: transform 1s linear .5s;
+    }
+    .top-part:hover .right img {
+        transform: translateX(-50px);
+    }
+    .top-part:hover .left {
+        transform: translateX(80px);
+    }
+    /* header styling ends */
+}
